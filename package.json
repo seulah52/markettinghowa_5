@@ -1,0 +1,13 @@
+{
+  "name": "chai-na",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:front\" \"npm run dev:back\"",
+    "dev:front": "cd frontend && npm run dev",
+    "dev:back": "cd backend && uvicorn app.main:app --reload"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}

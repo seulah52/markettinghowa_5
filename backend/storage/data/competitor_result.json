@@ -1,0 +1,66 @@
+{
+  "keyword_competitors": [
+    {
+      "name": "立邦 (Nippon Paint)",
+      "main_product": "内墙乳胶漆/水性内墙漆（净味、抗甲醛、耐擦洗系列）",
+      "origin": "Foreign company in China (Japan/Singapore background)",
+      "description": "中国家装墙面漆头部品牌，渠道覆盖广，主打净味与功能型内墙水漆。"
+    },
+    {
+      "name": "三棵树",
+      "main_product": "水性内墙乳胶漆（净味、抗菌防霉、高遮盖）",
+      "origin": "Chinese local company",
+      "description": "以“健康环保”定位强势，家装零售与工程渠道均衡，内墙水漆产品线完整。"
+    },
+    {
+      "name": "多乐士 (Dulux/阿克苏诺贝尔)",
+      "main_product": "内墙乳胶漆/水性墙面漆（森呼吸、抗污耐擦洗等）",
+      "origin": "Foreign company in China (Netherlands/UK)",
+      "description": "外资涂料巨头在华核心家装品牌，强调色彩与耐久性能，零售端认知度高。"
+    },
+    {
+      "name": "嘉宝莉 (Carpoly)",
+      "main_product": "水性内墙乳胶漆（净味、儿童漆、抗菌系列）",
+      "origin": "Chinese local company",
+      "description": "本土综合涂料厂商，家装与木器漆基础强，性价比与渠道下沉能力突出。"
+    },
+    {
+      "name": "晨阳水漆",
+      "main_product": "水性涂料（内墙水漆、家装水性漆）",
+      "origin": "Chinese local company",
+      "description": "以“水漆”心智著称，主打水性化与环保卖点，在内容平台讨论度较高。"
+    }
+  ],
+  "industry_competitors": [
+    {
+      "name": "立邦 (Nippon Paint)",
+      "main_product": "建筑涂料（内外墙）、工业涂料、汽车修补漆等",
+      "origin": "Foreign company in China (Japan/Singapore background)",
+      "description": "覆盖家装、工程与工业多赛道，规模与渠道能力在中国涂料行业领先。"
+    },
+    {
+      "name": "阿克苏诺贝尔 (AkzoNobel，含多乐士)",
+      "main_product": "建筑涂料、工业防护涂料、粉末涂料、船舶/防腐涂料",
+      "origin": "Foreign company in China (Netherlands)",
+      "description": "全球综合涂料集团，在华兼具家装品牌与工业涂料技术优势。"
+    },
+    {
+      "name": "PPG",
+      "main_product": "汽车原厂漆与修补漆、工业涂料、包装涂料等",
+      "origin": "Foreign company in China (USA)",
+      "description": "以汽车与工业涂料见长，B2B占比高，技术与客户黏性强。"
+    },
+    {
+      "name": "宣伟 (Sherwin-Williams)",
+      "main_product": "工业防护涂料、船舶涂料、建筑涂料等",
+      "origin": "Foreign company in China (USA)",
+      "description": "在防护与工业体系涂料领域影响力大，工程与工业客户覆盖广。"
+    },
+    {
+      "name": "三棵树",
+      "main_product": "建筑涂料（内外墙）、防水、保温装饰一体化等",
+      "origin": "Chinese local company",
+      "description": "本土龙头之一，工程端增长强，围绕“健康+工程”扩展多品类。"
+    }
+  ]
+}

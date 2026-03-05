@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가구 왕홍 매칭 시스템</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Pretendard', sans-serif; background: #f8fafc; padding: 30px; margin: 0; }
+        .container { width: 95%; max-width: 1200px; margin: auto; }
+        .main-card { background: white; padding: 40px; border-radius: 24px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); }
+        h1 { font-size: 32px; color: #1e293b; text-align: center; margin-bottom: 40px; font-weight: 800; }
+        
+        .criteria-box { background: #f1f5f9; border-radius: 15px; padding: 20px; margin-bottom: 30px; border-left: 5px solid #ff2442; }
+        .criteria-title { font-weight: 800; color: #1e293b; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+        
+        .ai-loader { display: none; text-align: center; padding: 50px 0; }
+        .scanner { width: 100%; height: 4px; background: linear-gradient(90deg, transparent, #ff2442, transparent); position: relative; animation: scan 2s infinite; }
+        @keyframes scan { 0% { top: 0; } 50% { top: 100px; } 100% { top: 0; } }
+
+        .match-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; margin-top: 30px; }
+        .match-card { background: white; border-radius: 20px; border: 1px solid #e2e8f0; overflow: hidden; transition: 0.3s; position: relative; }
+        .match-card:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); border-color: #ff2442; }
+        .match-score { position: absolute; top: 15px; right: 15px; background: #ff2442; color: white; padding: 5px 12px; border-radius: 20px; font-weight: 700; font-size: 14px; }
+        .card-body { padding: 20px; }
+        .influencer-info { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; }
+        .avatar-lg { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .match-reason { font-size: 13px; color: #475569; background: #fff5f5; padding: 12px; border-radius: 12px; line-height: 1.6; margin-bottom: 15px; height: 100px; overflow-y: auto; border: 1px solid #fee2e2; }
+        .btn-detail { width: 100%; background: #1e293b; color: white; border: none; padding: 10px; border-radius: 10px; font-weight: 600; cursor: pointer; transition: 0.2s; }
+        .btn-detail:hover { background: #0f172a; }
+
+        #statusLog { background: #1e293b; color: #00ff00; padding: 15px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 13px; text-align: left; max-height: 250px; overflow-y: auto; line-height: 1.6; border: 2px solid #334155; }
+        .diag-box { background: #f8fafc; padding: 20px; border-radius: 15px; border-left: 5px solid #ff2442; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-card">
+            <h1>🛋️ 가구 왕홍 매칭 시스템</h1>
+
+            <!-- 선정 기준 섹션 -->
+            <div class="criteria-box">
+                <div class="criteria-title">📋 AI 선정 기준</div>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="p-2 bg-white rounded shadow-sm small text-center">🎯 <b>콘텐츠 정합성</b><br>가구/인테리어 스타일 일치 여부</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-2 bg-white rounded shadow-sm small text-center">📈 <b>성장 잠재력</b><br>최근 팔로워 및 인터랙션 증가율</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-2 bg-white rounded shadow-sm small text-center">💰 <b>광고 효율성</b><br>CPE/CPM 대비 예상 전환 성능</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <textarea id="productDesc" class="form-control" rows="3" placeholder="분석할 상품 정보를 입력하세요 (예: 신혼부부용 미니멀리즘 소파)"></textarea>
+                <div class="controls mt-3 d-flex gap-2 align-items-center">
+                    <span class="fw-bold">추천 인원:</span>
+                    <select id="aiLimit" class="form-select" style="width: 120px;">
+                        <option value="1">1명</option>
+                        <option value="10" selected>10명</option>
+                        <option value="20">20명</option>
+                        <option value="30">30명</option>
+                        <option value="40">40명</option>
+                        <option value="50">50명</option>
+                    </select>
+                    <button onclick="startAiAnalysis()" id="btnAiMain" class="btn btn-danger flex-grow-1" style="height: 50px; font-weight: bold;">분석 시작</button>
+                </div>
+            </div>
+
+            <div id="aiLoader" class="ai-loader">
+                <div class="scanner"></div>
+                <h3 id="loaderTitle" class="text-danger mt-3" style="font-weight: 800;">가구 왕홍 100명을 실시간으로 추출 중</h3>
+                <p id="loaderSub" class="text-muted small">잠시만 기다려주세요...</p>
+            </div>
+
+            <div id="resultSection" style="display: none;">
+                <h3 class="mt-5 mb-3">🎯 AI 추천 리스트</h3>
+                <div id="matchGrid" class="match-grid"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 모달 등 나머지 구조 유지 -->
+    <div class="modal fade" id="detailModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content" style="border-radius: 24px;">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="modalName">왕홍 정밀 리포트</h2>
+                    <button type="button" class="btn-close" id="modalCloseBtn" data-bs-dismiss="modal" style="display: none;"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="modalLoading">
+                        <div class="text-center mb-3">
+                            <div class="spinner-border text-danger" role="status"></div>
+                            <p class="mt-2 fw-bold">실시간 데이터 분석 중...</p>
+                        </div>
+                        <div id="statusLog">> 연결 대기 중...</div>
+                    </div>
+                    <div id="modalContent" style="display: none;">
+                        <div class="row">
+                            <div class="col-md-4 text-center">
+                                <img id="modalAvatar" src="" class="avatar-lg" style="width: 120px; height: 120px; border: 3px solid #ff2442;">
+                                <h4 id="modalId" class="mt-3 text-muted small"></h4>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="diag-box mb-3">
+                                    <h4 class="fw-bold">매칭 왕홍 상세 정보</h4>
+                                    <p id="modalAiAnalysis" class="small mb-0"></p>
+                                </div>
+                                <div class="row g-2 text-center" style="font-size: 12px;">
+                                    <div class="col-4"><div class="p-2 border rounded bg-light">신규 팔로워<br><strong id="m_new_follower">-</strong></div></div>
+                                    <div class="col-4"><div class="p-2 border rounded bg-light">신규 게시물<br><strong id="m_new_note">-</strong></div></div>
+                                    <div class="col-4"><div class="p-2 border rounded bg-light">인기 급상승 게시물 비율<br><strong id="m_hot_rate">-</strong></div></div>
+                                    <div class="col-4"><div class="p-2 border rounded bg-light">평균 좋아요<br><strong id="m_avg_like">-</strong></div></div>
+                                    <div class="col-4"><div class="p-2 border rounded bg-light">평균 즐겨찾기<br><strong id="m_avg_save">-</strong></div></div>
+                                    <div class="col-4"><div class="p-2 border rounded bg-light">평균 공유<br><strong id="m_avg_share">-</strong></div></div>
+                                    <div class="col-6 mt-3"><div class="p-2 border rounded bg-danger-subtle">📹 비디오 단가<br><strong id="m_video_price" class="text-danger fs-5">-</strong></div></div>
+                                    <div class="col-6 mt-3"><div class="p-2 border rounded bg-primary-subtle">🖼️ 게시물 단가<br><strong id="m_image_price" class="text-primary fs-5">-</strong></div></div>
+                                    <div class="col-6 mt-2"><div class="p-2 border rounded">CPE<br><strong id="m_cpe">-</strong></div></div>
+                                    <div class="col-6 mt-2"><div class="p-2 border rounded">CPM<br><strong id="m_cpm">-</strong></div></div>
+                                </div>
+                                <button class="btn btn-secondary w-100 mt-4" data-bs-dismiss="modal">분석 창 닫기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const detailModal = new bootstrap.Modal(document.getElementById('detailModal'));
+
+        async function startAiAnalysis() {
+            const desc = document.getElementById('productDesc').value;
+            const limit = document.getElementById('aiLimit').value;
+            if(!desc) return alert("상품 정보를 입력하세요.");
+
+            const loader = document.getElementById('aiLoader');
+            const title = document.getElementById('loaderTitle');
+            const sub = document.getElementById('loaderSub');
+
+            // 1단계 문구
+            loader.style.display = 'block';
+            title.innerText = "가구 왕홍 100명을 실시간으로 추출 중";
+            sub.innerText = "후이툰 원본 데이터 로딩 중...";
+            document.getElementById('resultSection').style.display = 'none';
+
+            try {
+                // 약간의 지연 후 2단계 문구
+                setTimeout(() => {
+                    title.innerText = `연관성이 높은 왕홍 ${limit}명을 추출 중입니다.`;
+                    sub.innerText = " 추천 사유 생성 및 데이터 정제 중...";
+                }, 2000);
+
+                const res = await fetch('http://127.0.0.1:5000/recommend', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ product_desc: desc, recommend_count: parseInt(limit) })
+                });
+                const data = await res.json();
+                renderMatchCards(data.recommendation);
+                document.getElementById('resultSection').style.display = 'block';
+            } catch (e) { alert("추천 생성 실패"); }
+            finally { loader.style.display = 'none'; }
+        }
+
+        function renderMatchCards(data) {
+            const grid = document.getElementById('matchGrid');
+            grid.innerHTML = "";
+            data.forEach((inf, i) => {
+                grid.innerHTML += `
+                    <div class="match-card">
+                        <div class="match-score">${98-i}% 매칭</div>
+                        <div class="card-body">
+                            <div class="influencer-info">
+                                <img src="${inf.avatar}" class="avatar-lg" onerror="this.src='https://via.placeholder.com/60'">
+                                <div><h5 class="mb-0 small fw-bold">${inf.name}</h5><small class="text-muted">ID: ${inf.id}</small></div>
+                            </div>
+                            <div class="match-reason">${inf.reason}</div>
+                            <div class="d-flex justify-content-between mb-3 small">
+                                <span>팔로워: <b>${inf.followers}</b></span>
+                                <span class="text-danger"> 추천 지수: <b>${inf.score}</b></span>
+                            </div>
+                            <button class="btn-detail" onclick="showDeepDive('${inf.id}', '${inf.name}', '${inf.avatar}')">🔍 상세 데이터 분석</button>
+                        </div>
+                    </div>`;
+            });
+        }
+
+        let currentES = null;
+        function showDeepDive(id, name, avatar) {
+            if(currentES) currentES.close();
+            document.getElementById('modalName').innerText = `${name} 정밀 분석 리포트`;
+            document.getElementById('modalAvatar').src = avatar;
+            document.getElementById('modalId').innerText = `ID: ${id}`;
+            document.getElementById('modalLoading').style.display = 'block';
+            document.getElementById('modalContent').style.display = 'none';
+            document.getElementById('modalCloseBtn').style.display = 'none'; // 분석 중엔 닫기 버튼 숨김
+            
+            const logBox = document.getElementById('statusLog');
+            logBox.innerHTML = "> 분석 세션을 시작합니다...<br>";
+            detailModal.show();
+
+            currentES = new EventSource(`http://127.0.0.1:5000/get_detail?id=${id}&name=${encodeURIComponent(name)}`);
+            
+            currentES.onmessage = (e) => {
+                const msg = e.data;
+                if(!msg || msg === ": keep-alive") return;
+                
+                if (msg.startsWith("FINISHED:")) {
+                    renderDetailData(name, JSON.parse(msg.replace("FINISHED:", "")));
+                    currentES.close();
+                } else if (msg.startsWith("ERROR:")) {
+                    logBox.innerHTML += `<span class="text-danger">> ❌ 분석 중단: ${msg.replace("ERROR:", "")}</span><br>`;
+                    logBox.innerHTML += `> <span class="text-white fw-bold">원인 분석을 위해 브라우저 창을 확인해 주세요.</span><br>`;
+                    document.getElementById('modalCloseBtn').style.display = 'block'; // 실패 시 닫기 버튼 노출
+                    currentES.close();
+                } else if (msg.includes("[알림]")) {
+                    logBox.innerHTML += `<span class="text-warning-custom">> ${msg}</span><br>`;
+                    logBox.scrollTop = logBox.scrollHeight;
+                } else {
+                    logBox.innerHTML += `> ${msg}<br>`;
+                    logBox.scrollTop = logBox.scrollHeight;
+                }
+            };
+
+            currentES.onerror = () => {
+                if (currentES.readyState === EventSource.CLOSED) {
+                    logBox.innerHTML += `<span class="text-danger">> ❌ 서버와의 연결이 종료되었습니다.</span><br>`;
+                } else {
+                    logBox.innerHTML += `<span class="text-danger">> ⚠️ 일시적인 연결 오류 발생. (브라우저 창은 유지됨)</span><br>`;
+                }
+                document.getElementById('modalCloseBtn').style.display = 'block';
+            };
+        }
+
+        function renderDetailData(name, data) {
+            document.getElementById('modalAiAnalysis').innerText = `${name}님의 실시간 분석 리포트입니다.`;
+            document.getElementById('m_new_follower').innerText = data.new_followers || "0";
+            document.getElementById('m_new_note').innerText = data.new_notes || "0";
+            document.getElementById('m_hot_rate').innerText = data.hot_rate || "0";
+            document.getElementById('m_avg_like').innerText = data.avg_like || "0";
+            document.getElementById('m_avg_save').innerText = data.avg_save || "0";
+            document.getElementById('m_avg_share').innerText = data.avg_share || "0";
+            document.getElementById('m_video_price').innerText = data.video_price || "0";
+            document.getElementById('m_image_price').innerText = data.image_price || "0";
+            document.getElementById('m_cpe').innerText = data.cpe || "0";
+            document.getElementById('m_cpm').innerText = data.cpm || "0";
+            document.getElementById('modalLoading').style.display = 'none';
+            document.getElementById('modalContent').style.display = 'block';
+            document.getElementById('modalCloseBtn').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

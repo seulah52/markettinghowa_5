@@ -1,0 +1,893 @@
+[
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31j6ugkfbj40g5n51kd2lmgn9rt8crto?imageView2/2/w/360/format/webp",
+        "name": "郑恺",
+        "id": "978304362",
+        "followers": "136.44w",
+        "growth_amount": "978304362",
+        "growth_rate": "0.29%",
+        "score": 856.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30q4fsgl57k004bh2lnv8nlt1e3fu5fo?imageView2/2/w/360/format/webp",
+        "name": "ANNAHOUSE家居馆",
+        "id": "568645440",
+        "followers": "182.10w",
+        "growth_amount": "568645440",
+        "growth_rate": "0.23%",
+        "score": 572.06
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/6718ba1bfc0df1fc0c8f3b3b.jpg?imageView2/2/w/360/format/webp",
+        "name": "沐沐life日记",
+        "id": "799598897",
+        "followers": "9.49w",
+        "growth_amount": "799598897",
+        "growth_rate": "4.48%",
+        "score": 315.33
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31rrt4goki4005p2m92844o1ioc2j5rg?imageView2/2/w/360/format/webp",
+        "name": "寒小凝",
+        "id": "layefe99999",
+        "followers": "31.23w",
+        "growth_amount": "538.71",
+        "growth_rate": "0.18%",
+        "score": 100.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31k0gm3iq2o005n6k7jrlo6rsul16tig?imageView2/2/w/360/format/webp",
+        "name": "辣妈艾琳Eileen",
+        "id": "Eileen2025888",
+        "followers": "21.96w",
+        "growth_amount": "592.97",
+        "growth_rate": "0.25%",
+        "score": 99.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31rmvr1km246g4bondcmmdjq7c4l2jug?imageView2/2/w/360/format/webp",
+        "name": "李尔王的生活",
+        "id": "672437358",
+        "followers": "17.13w",
+        "growth_amount": "724.16",
+        "growth_rate": "0.33%",
+        "score": 98.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/62d6071fd75add00012fb6d6.jpg?imageView2/2/w/360/format/webp",
+        "name": "海蒂的花园",
+        "id": "500482595",
+        "followers": "158.20w",
+        "growth_amount": "492.68",
+        "growth_rate": "0.03%",
+        "score": 97.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo3189n0kko0o005p9nqjrhgk2snb1i960?imageView2/2/w/360/format/webp",
+        "name": "重生小元宝",
+        "id": "9868209918",
+        "followers": "15.14w",
+        "growth_amount": "626.19",
+        "growth_rate": "0.38%",
+        "score": 96.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31j7vhf5b34005p22t1a51jk473961m8?imageView2/2/w/360/format/webp",
+        "name": "云维鲜花",
+        "id": "2297090409",
+        "followers": "21.93w",
+        "growth_amount": "486.34",
+        "growth_rate": "0.27%",
+        "score": 95.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo310askts7ma605okkh5dockvsj5hae98?imageView2/2/w/360/format/webp",
+        "name": "朗良锦",
+        "id": "4146591928",
+        "followers": "10.60w",
+        "growth_amount": "686.63",
+        "growth_rate": "0.57%",
+        "score": 94.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/646250e3815e26c7856e61e6.jpg?imageView2/2/w/360/format/webp",
+        "name": "在逃许师傅",
+        "id": "zait023",
+        "followers": "59.72w",
+        "growth_amount": "788.97",
+        "growth_rate": "0.1%",
+        "score": 93.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/62e3ba63b7a8cf0001bb02e9.jpg?imageView2/2/w/360/format/webp",
+        "name": "斗西",
+        "id": "1076969173",
+        "followers": "6.65w",
+        "growth_amount": "372.42",
+        "growth_rate": "0.92%",
+        "score": 92.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/6192609d5430dec88fb1d456.jpg?imageView2/2/w/360/format/webp",
+        "name": "装修帮",
+        "id": "wscz3321",
+        "followers": "285.87w",
+        "growth_amount": "731.79",
+        "growth_rate": "0.02%",
+        "score": 91.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/64b3603ce1289d0001bf88aa.jpg?imageView2/2/w/360/format/webp",
+        "name": "设计师周森",
+        "id": "9501203805",
+        "followers": "7.83w",
+        "growth_amount": "682.52",
+        "growth_rate": "0.8%",
+        "score": 90.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31055ml8pls505pfc3c6jco6mpsdpi2o?imageView2/2/w/360/format/webp",
+        "name": "Quinn极简装修记",
+        "id": "42750337322",
+        "followers": "28.62w",
+        "growth_amount": "694.29",
+        "growth_rate": "0.22%",
+        "score": 89.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1000g2jo2q2tokm6k80005otc4609tdu55h732lo?imageView2/2/w/360/format/webp",
+        "name": "猫脚面",
+        "id": "6245311750",
+        "followers": "51.91w",
+        "growth_amount": "719.36",
+        "growth_rate": "0.12%",
+        "score": 88.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31mp19c635m6g5oupsn4pi8d872vga68?imageView2/2/w/360/format/webp",
+        "name": "激光小野牛",
+        "id": "5087612951",
+        "followers": "26.70w",
+        "growth_amount": "797.12",
+        "growth_rate": "0.24%",
+        "score": 87.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/6370ddb68df888c1a4c9fae7.jpg?imageView2/2/w/360/format/webp",
+        "name": "闫佩伦",
+        "id": "951668325",
+        "followers": "17.96w",
+        "growth_amount": "621.53",
+        "growth_rate": "0.37%",
+        "score": 86.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31os5o48d14005o4punug8bc8i5bsvs8?imageView2/2/w/360/format/webp",
+        "name": "林大婉儿",
+        "id": "1133294659",
+        "followers": "30.96w",
+        "growth_amount": "703.4",
+        "growth_rate": "0.21%",
+        "score": 85.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/623060ad375e3c40b0e83298.jpg?imageView2/2/w/360/format/webp",
+        "name": "NS空间",
+        "id": "6574917190",
+        "followers": "8.97w",
+        "growth_amount": "647.9",
+        "growth_rate": "0.76%",
+        "score": 84.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30qkao8hjg8005n48pj15i60gafhqu6o?imageView2/2/w/360/format/webp",
+        "name": "夏久久",
+        "id": "979372503",
+        "followers": "6.12w",
+        "growth_amount": "487.41",
+        "growth_rate": "1.12%",
+        "score": 83.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31jq7n52vj07049uohkced8vi6u6n7g8?imageView2/2/w/360/format/webp",
+        "name": "MOMO HOME家居",
+        "id": "496319632",
+        "followers": "94.81w",
+        "growth_amount": "528.32",
+        "growth_rate": "0.07%",
+        "score": 82.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31g5s5dq41a005p734oq0a3hla3fb1s0?imageView2/2/w/360/format/webp",
+        "name": "桃花归归",
+        "id": "thguigui",
+        "followers": "5.91w",
+        "growth_amount": "628.7",
+        "growth_rate": "1.17%",
+        "score": 81.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/62b5d2510cd277d9be3b46ab.jpg?imageView2/2/w/360/format/webp",
+        "name": "明月的锅锅",
+        "id": "187991385",
+        "followers": "16.73w",
+        "growth_amount": "517.39",
+        "growth_rate": "0.41%",
+        "score": 80.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/6449d643a870649a5852802c.jpg?imageView2/2/w/360/format/webp",
+        "name": "王执着",
+        "id": "4140685691",
+        "followers": "6.57w",
+        "growth_amount": "681.14",
+        "growth_rate": "1.06%",
+        "score": 79.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1e67f047-a417-3d3f-af25-a454f1eefbae?imageView2/2/w/360/format/webp",
+        "name": "木屿木业",
+        "id": "4177122195",
+        "followers": "34.06w",
+        "growth_amount": "510.25",
+        "growth_rate": "0.2%",
+        "score": 78.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31irug5c11i6049nqkjqsce2joccb758?imageView2/2/w/360/format/webp",
+        "name": "拾韵",
+        "id": "wangzaizaiqq",
+        "followers": "39.30w",
+        "growth_amount": "708.75",
+        "growth_rate": "0.17%",
+        "score": 77.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo313f65nlc000049vuvqldjbfoke31h40?imageView2/2/w/360/format/webp",
+        "name": "安妮的小窝",
+        "id": "Catcatswen",
+        "followers": "25.09w",
+        "growth_amount": "632.09",
+        "growth_rate": "0.27%",
+        "score": 76.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/6455bb86d565df2506e74a2b.jpg?imageView2/2/w/360/format/webp",
+        "name": "黄不溜秋",
+        "id": "117317867",
+        "followers": "57.57w",
+        "growth_amount": "748.59",
+        "growth_rate": "0.12%",
+        "score": 75.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo312enh9uo1i005ofg1808c7uk9l4rdjg?imageView2/2/w/360/format/webp",
+        "name": "亚特兰贵父",
+        "id": "1678001447",
+        "followers": "24.92w",
+        "growth_amount": "753.95",
+        "growth_rate": "0.28%",
+        "score": 74.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/63d09fa7cb14d4d74c060e8a.jpg?imageView2/2/w/360/format/webp",
+        "name": "Ryan王恒",
+        "id": "4940010407",
+        "followers": "8.71w",
+        "growth_amount": "280.75",
+        "growth_rate": "0.82%",
+        "score": 73.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/630e1cb3c88c1d3d5ef2ab75.jpg?imageView2/2/w/360/format/webp",
+        "name": "扣子的生活美学",
+        "id": "577135888",
+        "followers": "24.16w",
+        "growth_amount": "505.45",
+        "growth_rate": "0.29%",
+        "score": 72.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/614159520000000002021cb2.jpg?imageView2/2/w/360/format/webp",
+        "name": "彭彭",
+        "id": "6301094747",
+        "followers": "20.87w",
+        "growth_amount": "715.06",
+        "growth_rate": "0.34%",
+        "score": 71.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/663ed4600a412b53dbbeacbf.jpg?imageView2/2/w/360/format/webp",
+        "name": "爱家的小言",
+        "id": "xiaoyan422666",
+        "followers": "27.36w",
+        "growth_amount": "651.15",
+        "growth_rate": "0.26%",
+        "score": 70.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31jlnr2n8j25g4a6hr7dfvr8k71ugrcg?imageView2/2/w/360/format/webp",
+        "name": "上海金剪子窗帘软装馆",
+        "id": "278352264",
+        "followers": "5.12w",
+        "growth_amount": "382.14",
+        "growth_rate": "1.48%",
+        "score": 69.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31s5a8lc862005nu8hplg97v16peefc0?imageView2/2/w/360/format/webp",
+        "name": "小萱宝（省钱资讯版）",
+        "id": "1066387526",
+        "followers": "9.59w",
+        "growth_amount": "501.01",
+        "growth_rate": "0.77%",
+        "score": 68.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30ucvtfn55a3g5pd69b1212s7ukma38g?imageView2/2/w/360/format/webp",
+        "name": "秋秋的新家（软装中）",
+        "id": "3385865104",
+        "followers": "28.90w",
+        "growth_amount": "725.78",
+        "growth_rate": "0.25%",
+        "score": 67.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/644a3638e53d4325429032d8.jpg?imageView2/2/w/360/format/webp",
+        "name": "Baxter",
+        "id": "919501349",
+        "followers": "3.69w",
+        "growth_amount": "422.64",
+        "growth_rate": "2.06%",
+        "score": 66.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/862c720e-bf6a-3905-910f-944c1ff13216?imageView2/2/w/360/format/webp",
+        "name": "大美陶瓷",
+        "id": "957020710",
+        "followers": "23.76w",
+        "growth_amount": "468.31",
+        "growth_rate": "0.32%",
+        "score": 65.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo314a69lfb60004a1denmcij9aufvfsdo?imageView2/2/w/360/format/webp",
+        "name": "开心冠军MM-",
+        "id": "951214205",
+        "followers": "14.84w",
+        "growth_amount": "589.89",
+        "growth_rate": "0.53%",
+        "score": 63.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/65e2c96fe0c8b10001a75022.jpg?imageView2/2/w/360/format/webp",
+        "name": "FUTURE MATTERS",
+        "id": "5236075273",
+        "followers": "9.72w",
+        "growth_amount": "544.48",
+        "growth_rate": "0.82%",
+        "score": 62.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/62cfdf644c99db29eb0a8023.jpg?imageView2/2/w/360/format/webp",
+        "name": "白可可",
+        "id": "6506165001",
+        "followers": "8.84w",
+        "growth_amount": "303.12",
+        "growth_rate": "0.91%",
+        "score": 61.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31d6ee0tggk604b7kksl4gqi5q53u5l8?imageView2/2/w/360/format/webp",
+        "name": "靓靓子的家",
+        "id": "541303783",
+        "followers": "12.36w",
+        "growth_amount": "755.86",
+        "growth_rate": "0.65%",
+        "score": 60.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/643e4e65cf0f84f939f41e4e.jpg?imageView2/2/w/360/format/webp",
+        "name": "卜小昕",
+        "id": "630275114",
+        "followers": "4.05w",
+        "growth_amount": "637.14",
+        "growth_rate": "2.05%",
+        "score": 59.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/66b973625c733cc0209fe5dd.jpg?imageView2/2/w/360/format/webp",
+        "name": "厨小匠生活美学优选",
+        "id": "9535866336",
+        "followers": "11.83w",
+        "growth_amount": "467.1",
+        "growth_rate": "0.69%",
+        "score": 58.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/5f694510bb543c0001e1e38b.jpg?imageView2/2/w/360/format/webp",
+        "name": "得得饿了",
+        "id": "630321988",
+        "followers": "54.53w",
+        "growth_amount": "758.45",
+        "growth_rate": "0.15%",
+        "score": 57.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/6115e62a1e9577fd07c1d214.jpg?imageView2/2/w/360/format/webp",
+        "name": "高瓦斯",
+        "id": "4212622162",
+        "followers": "18.49w",
+        "growth_amount": "641.91",
+        "growth_rate": "0.44%",
+        "score": 56.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31jlmh9i6j0705o911hc08efakbnppmg?imageView2/2/w/360/format/webp",
+        "name": "拾说家电",
+        "id": "4971449959",
+        "followers": "23.04w",
+        "growth_amount": "658.21",
+        "growth_rate": "0.36%",
+        "score": 55.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1000g2jo2nu7gliajm06g5ov39ubpglc7r75ppj8?imageView2/2/w/360/format/webp",
+        "name": "CASAGD原创设计师",
+        "id": "5032764031",
+        "followers": "9.59w",
+        "growth_amount": "570.16",
+        "growth_rate": "0.88%",
+        "score": 54.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30qgcdlah02005oi3qig8c91cbgc5o48?imageView2/2/w/360/format/webp",
+        "name": "彭小虎的开心农场",
+        "id": "2193960143",
+        "followers": "6.15w",
+        "growth_amount": "634.4",
+        "growth_rate": "1.41%",
+        "score": 53.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo312iq33n908005phsh7d0u6rlbmfl518?imageView2/2/w/360/format/webp",
+        "name": "山师傅造花园",
+        "id": "26561282475",
+        "followers": "63.29w",
+        "growth_amount": "754.88",
+        "growth_rate": "0.13%",
+        "score": 52.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/66e633456418370001e00deb.jpg?imageView2/2/w/360/format/webp",
+        "name": "聊草Z-plants",
+        "id": "9406272727",
+        "followers": "25.16w",
+        "growth_amount": "427.68",
+        "growth_rate": "0.34%",
+        "score": 51.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31rd3k13s706g5pas2kr1795stdit95o?imageView2/2/w/360/format/webp",
+        "name": "素姐智能家装life",
+        "id": "7950766437",
+        "followers": "24.56w",
+        "growth_amount": "719.13",
+        "growth_rate": "0.36%",
+        "score": 50.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo313hv4pv302005pisdg6guelq8447qfg?imageView2/2/w/360/format/webp",
+        "name": "独立女生提升记",
+        "id": "26533618302",
+        "followers": "36.19w",
+        "growth_amount": "681.8",
+        "growth_rate": "0.24%",
+        "score": 49.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/635fef69918197a0f53689a2.jpg?imageView2/2/w/360/format/webp",
+        "name": "你好仲文",
+        "id": "6385533257",
+        "followers": "50.64w",
+        "growth_amount": "673.65",
+        "growth_rate": "0.17%",
+        "score": 48.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31sca82tt5a005orf9t17qkouc6o0bg8?imageView2/2/w/360/format/webp",
+        "name": "好范不怕晚",
+        "id": "4173287685",
+        "followers": "20.58w",
+        "growth_amount": "807.54",
+        "growth_rate": "0.44%",
+        "score": 47.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/5de6288fcef80a00016fc106.jpg?imageView2/2/w/360/format/webp",
+        "name": "龚先生教插花",
+        "id": "gongyong1213",
+        "followers": "79.05w",
+        "growth_amount": "693.94",
+        "growth_rate": "0.11%",
+        "score": 46.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/636a3f366dab224c563276dc.jpg?imageView2/2/w/360/format/webp",
+        "name": "大洋哥-室内空间设计",
+        "id": "DAYG1987",
+        "followers": "22.69w",
+        "growth_amount": "698.3",
+        "growth_rate": "0.41%",
+        "score": 45.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30srvigjfk2005p1g6v6ki94a4agendg?imageView2/2/w/360/format/webp",
+        "name": "小乔团子🍡（软装中）",
+        "id": "9601402553",
+        "followers": "9.46w",
+        "growth_amount": "623.86",
+        "growth_rate": "1.04%",
+        "score": 44.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/61b34b60b8a5d9b927ef970e.jpg?imageView2/2/w/360/format/webp",
+        "name": "一粒沙",
+        "id": "670771668",
+        "followers": "20.93w",
+        "growth_amount": "714.01",
+        "growth_rate": "0.47%",
+        "score": 43.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/63dfca40905230158dfc86e6.jpg?imageView2/2/w/360/format/webp",
+        "name": "COCO HOME家",
+        "id": "5015187032",
+        "followers": "16.22w",
+        "growth_amount": "529.58",
+        "growth_rate": "0.61%",
+        "score": 42.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/642b8e6f8fbdcc0f0e5bcb0d.jpg?imageView2/2/w/360/format/webp",
+        "name": "胡椒太太",
+        "id": "Mrspepper",
+        "followers": "6.80w",
+        "growth_amount": "596.19",
+        "growth_rate": "1.53%",
+        "score": 41.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/611a142286fc01879e1affb2.jpg?imageView2/2/w/360/format/webp",
+        "name": "Tim的快乐生活",
+        "id": "630098608",
+        "followers": "26.41w",
+        "growth_amount": "672.42",
+        "growth_rate": "0.4%",
+        "score": 40.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/62bd1948160962dc1eca8582.jpg?imageView2/2/w/360/format/webp",
+        "name": "面小姐",
+        "id": "xu_toto",
+        "followers": "6.61w",
+        "growth_amount": "600.43",
+        "growth_rate": "1.72%",
+        "score": 39.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31filh65ong0g5om6kc6gg1buc8uonog?imageView2/2/w/360/format/webp",
+        "name": "生活家陶一",
+        "id": "5680812538",
+        "followers": "29.92w",
+        "growth_amount": "699.18",
+        "growth_rate": "0.38%",
+        "score": 38.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1000g2jo2l3di5qkio0005otg1v1pidm7qe7fa40?imageView2/2/w/360/format/webp",
+        "name": "刘大大的装修妙想",
+        "id": "3887917394",
+        "followers": "15.57w",
+        "growth_amount": "742.97",
+        "growth_rate": "0.77%",
+        "score": 37.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/60d2c4dfa68fb20001ce2f03.jpg?imageView2/2/w/360/format/webp",
+        "name": "四时有梨",
+        "id": "sishi22260",
+        "followers": "89.21w",
+        "growth_amount": "528.47",
+        "growth_rate": "0.13%",
+        "score": 36.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31pcqen8aio005ntfotsg8i3n4t0v57g?imageView2/2/w/360/format/webp",
+        "name": "小晓姐妹",
+        "id": "1097864777",
+        "followers": "11.37w",
+        "growth_amount": "664.56",
+        "growth_rate": "1.07%",
+        "score": 35.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo3123a5d21ju6g5ph8knj0u2gbqc6nu6o?imageView2/2/w/360/format/webp",
+        "name": "装修吧毛蛋",
+        "id": "11380030516",
+        "followers": "45.17w",
+        "growth_amount": "850.08",
+        "growth_rate": "0.27%",
+        "score": 34.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/61d86652bdda7309d7e4a450.jpg?imageView2/2/w/360/format/webp",
+        "name": "小辛的小心机",
+        "id": "2161813870",
+        "followers": "6.69w",
+        "growth_amount": "613.96",
+        "growth_rate": "1.92%",
+        "score": 33.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/61270dcd53b1eb00011b1e18.jpg?imageView2/2/w/360/format/webp",
+        "name": "观夏",
+        "id": "100567837",
+        "followers": "24.19w",
+        "growth_amount": "479.94",
+        "growth_rate": "0.53%",
+        "score": 32.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/seller_696f60eca8a7e8000108f34b?imageView2/2/w/360/format/webp",
+        "name": "COCO HOME美居",
+        "id": "5583939895",
+        "followers": "142.56w",
+        "growth_amount": "590.23",
+        "growth_rate": "0.09%",
+        "score": 31.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo310fh9m6imi605nlq1ha0bmfpj2vum68?imageView2/2/w/360/format/webp",
+        "name": "宋朝",
+        "id": "468896247",
+        "followers": "34.14w",
+        "growth_amount": "527.45",
+        "growth_rate": "0.42%",
+        "score": 30.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31m69n7as58005p2q8iq4mmi40rgsib0?imageView2/2/w/360/format/webp",
+        "name": "罐罐的家🏠",
+        "id": "5505813716",
+        "followers": "9.65w",
+        "growth_amount": "294",
+        "growth_rate": "1.67%",
+        "score": 29.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/643eda40460bcbf54fb34ec2.jpg?imageView2/2/w/360/format/webp",
+        "name": "小二哥当家",
+        "id": "a775825878",
+        "followers": "61.80w",
+        "growth_amount": "720.24",
+        "growth_rate": "0.25%",
+        "score": 28.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/5afcef5511be10433b03d81e.jpg?imageView2/2/w/360/format/webp",
+        "name": "北京豆丁",
+        "id": "183422022",
+        "followers": "6.36w",
+        "growth_amount": "644.06",
+        "growth_rate": "2.56%",
+        "score": 27.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/637e29091088f1cc3e4d3a27.jpg?imageView2/2/w/360/format/webp",
+        "name": "是胡不是祸",
+        "id": "385644918",
+        "followers": "8.40w",
+        "growth_amount": "600.87",
+        "growth_rate": "1.95%",
+        "score": 26.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/65f04206c7e48421f3099c4e.jpg?imageView2/2/w/360/format/webp",
+        "name": "火火聊家居",
+        "id": "411597539",
+        "followers": "31.41w",
+        "growth_amount": "727.95",
+        "growth_rate": "0.52%",
+        "score": 25.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31gkviq86jc005p06tfvqa6viem9e76g?imageView2/2/w/360/format/webp",
+        "name": "汤匙与波纹 HOME",
+        "id": "2271649159",
+        "followers": "86.08w",
+        "growth_amount": "514.13",
+        "growth_rate": "0.18%",
+        "score": 24.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/661e1ff2661fd927a0f0a995.jpg?imageView2/2/w/360/format/webp",
+        "name": "小小宅家日记",
+        "id": "1009889622",
+        "followers": "26.14w",
+        "growth_amount": "533.22",
+        "growth_rate": "0.65%",
+        "score": 23.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/5df6494508e0c100017de00e.jpg?imageView2/2/w/360/format/webp",
+        "name": "小蜗牛牛牛牛",
+        "id": "102881877",
+        "followers": "57.78w",
+        "growth_amount": "850.35",
+        "growth_rate": "0.31%",
+        "score": 22.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/seller_68c4c2f0dfb05c0001ca37f8?imageView2/2/w/360/format/webp",
+        "name": "六冉HOME LIFE",
+        "id": "11834630414",
+        "followers": "33.94w",
+        "growth_amount": "608.24",
+        "growth_rate": "0.54%",
+        "score": 21.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/6768c63159d26cd13a281234.jpg?imageView2/2/w/360/format/webp",
+        "name": "佩佩佳超好吃",
+        "id": "1553126116",
+        "followers": "36.28w",
+        "growth_amount": "771.05",
+        "growth_rate": "0.5%",
+        "score": 20.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30qf02bodg00g5p53ujg7ol6f0gaq8q8?imageView2/2/w/360/format/webp",
+        "name": "是原原呀🦋",
+        "id": "5581218748",
+        "followers": "45.37w",
+        "growth_amount": "663.55",
+        "growth_rate": "0.4%",
+        "score": 19.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30otg9pqv3q6g5o5snlug881bk7mpbq8?imageView2/2/w/360/format/webp",
+        "name": "心相印",
+        "id": "1152516485",
+        "followers": "7.88w",
+        "growth_amount": "542.68",
+        "growth_rate": "2.44%",
+        "score": 18.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/85e899f0-61e8-3e98-b165-ee558255ee0f?imageView2/2/w/360/format/webp",
+        "name": "本屋创品宿舍床帘",
+        "id": "2277842997",
+        "followers": "16.79w",
+        "growth_amount": "502.56",
+        "growth_rate": "1.12%",
+        "score": 17.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/638c045be306bc6e27f9fab9.jpg?imageView2/2/w/360/format/webp",
+        "name": "Mno 米诺家",
+        "id": "1061026701",
+        "followers": "107.13w",
+        "growth_amount": "758.72",
+        "growth_rate": "0.18%",
+        "score": 16.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31rif4eooim005o6tjnno51omgrcju8g?imageView2/2/w/360/format/webp",
+        "name": "家的角落",
+        "id": "9545130944",
+        "followers": "98.77w",
+        "growth_amount": "547.5",
+        "growth_rate": "0.2%",
+        "score": 15.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo317jr9phl0s004biui4umlscli4ulutg?imageView2/2/w/360/format/webp",
+        "name": "大金空调",
+        "id": "543104312",
+        "followers": "11.36w",
+        "growth_amount": "431.34",
+        "growth_rate": "1.84%",
+        "score": 14.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31g9fc1od1k004bepqtbivibo9bejckg?imageView2/2/w/360/format/webp",
+        "name": "创意家具工厂店-主页选购",
+        "id": "561626682",
+        "followers": "45.47w",
+        "growth_amount": "710.24",
+        "growth_rate": "0.45%",
+        "score": 13.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/6731d7df4010f300013d2217.jpg?imageView2/2/w/360/format/webp",
+        "name": "老诚讲装修",
+        "id": "6806389294",
+        "followers": "35.31w",
+        "growth_amount": "764.74",
+        "growth_rate": "0.62%",
+        "score": 12.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31l8qk7cd5o005n2qhmg6uvo0sh6fn48?imageView2/2/w/360/format/webp",
+        "name": "远征教插花",
+        "id": "yzjch3108",
+        "followers": "85.55w",
+        "growth_amount": "735.5",
+        "growth_rate": "0.26%",
+        "score": 11.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/64352fd0bdd3d10914316b9c.jpg?imageView2/2/w/360/format/webp",
+        "name": "琦牙仔Kiaco",
+        "id": "1098341589",
+        "followers": "14.86w",
+        "growth_amount": "631.23",
+        "growth_rate": "2.01%",
+        "score": 10.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30t2a9tl7ka0049veu621tts2jkfmdu8?imageView2/2/w/360/format/webp",
+        "name": "大脸陈咔咔",
+        "id": "189295503",
+        "followers": "61.20w",
+        "growth_amount": "649.16",
+        "growth_rate": "0.54%",
+        "score": 9.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/6011785c4cee3033167d5b5f.jpg?imageView2/2/w/360/format/webp",
+        "name": "王小喵聊家电",
+        "id": "1048438009",
+        "followers": "7.25w",
+        "growth_amount": "311.42",
+        "growth_rate": "4.76%",
+        "score": 8.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/seller_68ccd7cec10d7c00015717f6?imageView2/2/w/360/format/webp",
+        "name": "理想的家",
+        "id": "5545956107",
+        "followers": "88.92w",
+        "growth_amount": "547.03",
+        "growth_rate": "0.39%",
+        "score": 7.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/695cec1cb8621000017b163d.jpg?imageView2/2/w/360/format/webp",
+        "name": "sun耀佛山高端家具（磬思）",
+        "id": "3856451768",
+        "followers": "12.87w",
+        "growth_amount": "517.61",
+        "growth_rate": "2.92%",
+        "score": 6.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31m35k3hrlm004a1e7co5udp60lmi8kg?imageView2/2/w/360/format/webp",
+        "name": "菠萝包的家",
+        "id": "gsh6868",
+        "followers": "16.49w",
+        "growth_amount": "318.9",
+        "growth_rate": "2.29%",
+        "score": 5.0
+    },
+    {
+        "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo319uc9nb5ng0g5n47m4l4av59qaf5t0g?imageView2/2/w/360/format/webp",
+        "name": "肥坚闲不住",
+        "id": "975157141",
+        "followers": "42.88w",
+        "growth_amount": "752.86",
+        "growth_rate": "0.94%",
+        "score": 4.0
+    }
+]

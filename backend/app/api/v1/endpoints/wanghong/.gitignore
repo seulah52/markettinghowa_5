@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+.gemini/
+debug_*.png
+xhs_live_report.txt
+huitun_xhs_cookie.json

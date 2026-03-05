@@ -1,0 +1,19 @@
+{
+  "keyword": "内墙漆",
+  "index": 2972,
+  "period": "2026-02-03 ~ 2026-03-05",
+  "demographics": {
+    "age": {
+      "0-17": "4%",
+      "18-24": "27%",
+      "25-34": "32%",
+      "35-44": "12%",
+      "45+": "7%"
+    },
+    "gender": {
+      "male": "42%",
+      "female": "58%"
+    }
+  },
+  "source": "Baidu Index API (Real-time Simulation)"
+}
