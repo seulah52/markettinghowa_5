@@ -5,7 +5,9 @@ import asyncio
 # Windows에서 Playwright subprocess 지원을 위해 ProactorEventLoop 정책 설정
 # 주의: 루프를 직접 생성/설정하면 uvicorn의 루프 관리와 충돌하므로 정책만 설정
 if sys.platform == 'win32':
-    asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
+    policy = getattr(asyncio, "WindowsProactorEventLoopPolicy", None)
+    if policy:
+        asyncio.set_event_loop_policy(policy())
 
 import httpx
 import json
@@ -54,8 +56,8 @@ DEEPSEEK_MODEL = "deepseek-chat"
 class AnalysisRequest(BaseModel):
     keyword: str
 
-@router.post("/run")
-async def api_run_analysis(req: AnalysisRequest):
+@router.post("/start")
+async def api_start_analysis(req: AnalysisRequest):
     """프론트엔드에서 호출하는 통합 분석 엔드포인트"""
     try:
         result = await run_full_analysis(req.keyword)
