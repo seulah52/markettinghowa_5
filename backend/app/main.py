@@ -7,7 +7,7 @@ import uvicorn
 # 최상단에서 Windows 루프 정책 강제 설정
 if sys.platform == 'win32':
     asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
-
+    
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
