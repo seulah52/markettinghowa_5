@@ -56,12 +56,27 @@ DEEPSEEK_MODEL = "deepseek-chat"
 class AnalysisRequest(BaseModel):
     keyword: str
 
+async def _run_analysis_impl(req: AnalysisRequest):
+    """분석 실행 공통 로직 (start/run 공용)"""
+    result = await run_full_analysis(req.keyword)
+    return {"success": True, "data": result}
+
+
 @router.post("/start")
 async def api_start_analysis(req: AnalysisRequest):
     """프론트엔드에서 호출하는 통합 분석 엔드포인트"""
     try:
-        result = await run_full_analysis(req.keyword)
-        return {"success": True, "data": result}
+        return await _run_analysis_impl(req)
+    except Exception as e:
+        logger.error("analysis_failed", error=str(e))
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@router.post("/run")
+async def api_run_analysis(req: AnalysisRequest):
+    """프론트 analysis.run() 호출 대응 (start와 동일)"""
+    try:
+        return await _run_analysis_impl(req)
     except Exception as e:
         logger.error("analysis_failed", error=str(e))
         raise HTTPException(status_code=500, detail=str(e))

@@ -37,7 +37,9 @@ app.add_middleware(
     allow_headers=["*"]
 )
 app.add_middleware(LoggingMiddleware)
+# 프론트가 /api/v1 또는 /v1 로 요청해도 동일 라우터 응답 (배포 환경 호환)
 app.include_router(router, prefix="/api/v1")
+app.include_router(router, prefix="/v1")
 
 @app.get("/health")
 async def health(): 

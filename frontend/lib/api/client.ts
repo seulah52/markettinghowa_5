@@ -1,4 +1,5 @@
-const BASE = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:8000';
+// 배포 시 Vercel에 NEXT_PUBLIC_API_URL=https://markettinghowa-5.onrender.com 설정 (끝에 / 없이)
+const BASE = (process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:8000').replace(/\/+$/, '');
 
 export class ApiError extends Error {
   status: number;
