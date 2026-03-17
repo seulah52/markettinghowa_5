@@ -26,7 +26,7 @@ app = FastAPI(title="chai-na API", version="1.0.0", lifespan=lifespan)
 # 2. CORS 설정 수정 (발표 및 배포를 위해 모든 origin 허용 또는 Netlify 주소 추가 추천)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "https://markettinghowa-5.netlify.app"],
+    allow_origins=["http://localhost:3000", "https://markettinghowa-5.vercel.app"],
     allow_credentials=True, 
     allow_methods=["*"], 
     allow_headers=["*"]
