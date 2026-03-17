@@ -30,6 +30,7 @@ app.add_middleware(
         "http://localhost:3000",
         "https://markettinghowa-5.vercel.app",
         "https://markettinghowa-5-fa8yhq99a-seulah52s-projects.vercel.app",
+        "*"
     ],
     allow_credentials=True, 
     allow_methods=["*"], 
