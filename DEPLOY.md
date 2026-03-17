@@ -16,6 +16,7 @@
 
 - Vercel **Environment Variables**에 `NEXT_PUBLIC_API_URL=https://markettinghowa-5.onrender.com` 설정.
 - Supabase anon 키는 Vercel/프론트 환경 변수 `NEXT_PUBLIC_SUPABASE_ANON_KEY`에, service role 키는 Render/백엔드에만 설정.
+- **환경 변수 이름**: 배포 시에는 `backend/.env`에 쓰는 **변수명과 동일하게** Render / Vercel에 추가. 전체 목록은 **`.env.example`** 참고. 백엔드는 `app/core/config.py`의 Settings에서 읽습니다.
 
 ---
 

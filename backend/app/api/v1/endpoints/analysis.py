@@ -46,11 +46,11 @@ KEYWORD = ""
 GLOBAL_FINAL_REPORT = {}
 
 # DeepSeek API 설정
-DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY", "")
+DEEPSEEK_API_KEY = settings.DEEPSEEK_API_KEY
 deepseek_client = AsyncOpenAI(
-    api_key=DEEPSEEK_API_KEY,
+    api_key=settings.DEEPSEEK_API_KEY,
     base_url="https://api.deepseek.com",
-) if DEEPSEEK_API_KEY else None
+) if settings.DEEPSEEK_API_KEY else None
 DEEPSEEK_MODEL = "deepseek-chat"
 
 class AnalysisRequest(BaseModel):

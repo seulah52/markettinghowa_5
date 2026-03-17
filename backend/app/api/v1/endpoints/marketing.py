@@ -106,17 +106,17 @@ router = APIRouter()
 # =========================
 openai_client = AsyncOpenAI(api_key=settings.OPENAI_API_KEY)
 
-# DeepSeek 클라이언트 (OpenAI 호환 엔드포인트)
-DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY", "")
+# DeepSeek / Remove.bg / 모델명 — config(배포 env) 기준
+DEEPSEEK_API_KEY = settings.DEEPSEEK_API_KEY
 deepseek_client = AsyncOpenAI(
-    api_key=DEEPSEEK_API_KEY,
+    api_key=settings.DEEPSEEK_API_KEY,
     base_url="https://api.deepseek.com",
-) if DEEPSEEK_API_KEY else None
+) if settings.DEEPSEEK_API_KEY else None
 DEEPSEEK_MODEL = "deepseek-chat"
 
-REMOVE_BG_API_KEY = os.getenv("REMOVE_BG_API_KEY", "")
-IMAGE_MODEL       = os.getenv("IMAGE_MODEL", "gpt-image-1")
-TEXT_MODEL        = os.getenv("TEXT_MODEL", "gpt-4o")
+REMOVE_BG_API_KEY = settings.REMOVE_BG_API_KEY
+IMAGE_MODEL = settings.IMAGE_MODEL
+TEXT_MODEL = settings.TEXT_MODEL
 
 ROOT_DIR         = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", ".."))
 DATA_STORAGE_DIR = os.path.join(ROOT_DIR, "storage", "data")
