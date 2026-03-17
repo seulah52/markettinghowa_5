@@ -20,7 +20,7 @@ function Counter({ value, isComma = false }: { value: number; isComma?: boolean 
 
   const displayValue = useTransform(springValue, (latest) => {
     const num = Math.floor(latest);
-    return isComma ? num.toLocaleString() : num;
+    return isComma ? num.toLocaleString() : String(num);
   });
 
   useEffect(() => {

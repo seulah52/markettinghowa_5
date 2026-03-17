@@ -2,9 +2,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   async rewrites() {
-    return [
-      { source: '/api/:path*', destination: 'http://localhost:8000/api/:path*' },
-    ];
+    const base = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+    return [{ source: '/api/:path*', destination: `${base}/api/:path*` }];
   },
   images: {
     remotePatterns: [
