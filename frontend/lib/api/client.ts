@@ -1,10 +1,18 @@
-// 배포 시 Vercel에 NEXT_PUBLIC_API_URL=https://markettinghowa-5.onrender.com 설정 (끝에 / 없이)
-const BASE = (process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:8000').replace(/\/+$/, '');
+/** 배포 도메인 접속 시 env 미설정이어도 백엔드 연결되도록 런타임 fallback (다른 페이지에서도 사용) */
+export function getApiBase(): string {
+  const envUrl = process.env.NEXT_PUBLIC_API_URL?.replace(/\/+$/, '');
+  if (envUrl && !envUrl.includes('localhost')) return envUrl;
+  if (typeof window !== 'undefined') {
+    const host = window.location.hostname;
+    if (host === 'markettinghowa-5.vercel.app' || host.endsWith('.vercel.app')) return 'https://markettinghowa-5.onrender.com';
+  }
+  return 'http://localhost:8000';
+}
 
 export class ApiError extends Error {
   status: number;
-  payload: any;
-  constructor(status: number, payload: any, message: string) {
+  payload: unknown;
+  constructor(status: number, payload: unknown, message: string) {
     super(message);
     this.status = status;
     this.payload = payload;
@@ -12,7 +20,8 @@ export class ApiError extends Error {
 }
 
 async function request<T>(path: string, options?: RequestInit): Promise<T> {
-  const res = await fetch(`${BASE}${path}`, {
+  const base = getApiBase();
+  const res = await fetch(`${base}${path}`, {
     headers: { 'Content-Type': 'application/json' },
     ...options,
   });
@@ -45,7 +54,7 @@ export const apiClient = {
   wanghong: {
     crawl:    ()                 => request<any>('/api/v1/wanghong/crawl'),
     recommend: (payload: unknown) => request<any>('/api/v1/wanghong/recommend', { method: 'POST', body: JSON.stringify(payload) }),
-    detail:   (id: string, name: string) => `${BASE}/api/v1/wanghong/detail?anchor_id=${id}&name=${encodeURIComponent(name)}`,
+    detail:   (id: string, name: string) => `${getApiBase()}/api/v1/wanghong/detail?anchor_id=${id}&name=${encodeURIComponent(name)}`,
     oneClick: (payload: { keyword: string; recommend_count?: number; use_previous?: boolean }) =>
       request<any>('/api/v1/wanghong/one-click', { method: 'POST', body: JSON.stringify(payload) }),
     detailJson: (id: string) =>
