@@ -19,6 +19,28 @@
 
 ---
 
+## ⚠️ "서버 통신 중 오류가 발생했습니다" 해결 방법
+
+배포된 사이트(markettinghowa-5.vercel.app)는 열리는데 **분석 시작** 등에서 위 오류가 나면, 아래를 순서대로 확인하세요.
+
+1. **Vercel 환경 변수**
+   - [Vercel](https://vercel.com) → 프로젝트 선택 → **Settings** → **Environment Variables**
+   - `NEXT_PUBLIC_API_URL` = `https://markettinghowa-5.onrender.com` (값 끝에 `/` 없음)
+   - 없으면 **Add** 후 **Production**, **Preview**, **Development** 모두 체크하고 저장.
+
+2. **환경 변수 추가/수정 후 반드시 재배포**
+   - `NEXT_PUBLIC_*` 변수는 **빌드 시** 번들에 들어갑니다. 저장만 하면 기존 배포에는 적용되지 않습니다.
+   - **Deployments** 탭 → 최신 배포 오른쪽 **⋯** → **Redeploy** 실행.
+
+3. **백엔드 동작 확인**
+   - 브라우저에서 [https://markettinghowa-5.onrender.com/health](https://markettinghowa-5.onrender.com/health) 열기.
+   - `{"status":"ok"}` 가 보이면 백엔드는 정상. (무료 플랜은 15분 비활성 시 슬립되므로, 첫 요청은 30초~1분 걸릴 수 있음.)
+
+4. **CORS**
+   - 백엔드 코드에 `https://markettinghowa-5.vercel.app` 이 `allow_origins`에 포함되어 있어야 합니다. 포함 후 Render에서 **재배포**해야 적용됩니다.
+
+---
+
 ## 사전 준비
 
 - [Node.js](https://nodejs.org/) (v18 이상)
