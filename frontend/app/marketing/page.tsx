@@ -4,6 +4,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import ChatbotButton from '@/components/chatbot/ChatbotButton';
 
+const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:8000';
 
 const FONTS = [
   { id: 'JianZhengLiHei',        label: 'JianZheng LiHei (정석 리헤이)' },
@@ -99,7 +100,7 @@ export default function MarketingPage() {
   const loadPreviousData = async () => {
     setLoadingPrev(true);
     try {
-      const res = await fetch('http://localhost:8000/api/v1/marketing/previous-data');
+      const res = await fetch(`${API_BASE}/api/v1/marketing/previous-data`);
       const data = await res.json();
       if (data.status === 'ok') {
         setStep1(prev => ({
@@ -120,7 +121,7 @@ export default function MarketingPage() {
     if (!productKr.trim()) return;
     setTranslatingProduct(true);
     try {
-      const res = await fetch('http://localhost:8000/api/v1/marketing/translate-product', {
+      const res = await fetch(`${API_BASE}/api/v1/marketing/translate-product`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ product_kr: productKr }),
@@ -145,7 +146,7 @@ export default function MarketingPage() {
     if (!step1.image || !step1.product) return;
     setLoading(p => ({ ...p, 2: true }));
     try {
-      const res = await fetch('http://localhost:8000/api/v1/marketing/step2-init', {
+      const res = await fetch(`${API_BASE}/api/v1/marketing/step2-init`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -184,7 +185,7 @@ export default function MarketingPage() {
 
   const applyOverlay = async () => {
     try {
-      const res = await fetch('http://localhost:8000/api/v1/marketing/overlay', {
+      const res = await fetch(`${API_BASE}/api/v1/marketing/overlay`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -238,7 +239,7 @@ export default function MarketingPage() {
   const runStep3 = async () => {
     setLoading(p => ({ ...p, 3: true }));
     try {
-      const res = await fetch('http://localhost:8000/api/v1/marketing/step3-generate', {
+      const res = await fetch(`${API_BASE}/api/v1/marketing/step3-generate`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -271,7 +272,7 @@ export default function MarketingPage() {
   const runStep4 = async () => {
     setLoading(p => ({ ...p, 4: true }));
     try {
-      const res = await fetch('http://localhost:8000/api/v1/marketing/step4-memo', {
+      const res = await fetch(`${API_BASE}/api/v1/marketing/step4-memo`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -293,7 +294,7 @@ export default function MarketingPage() {
   const runStep5 = async () => {
     setLoading(p => ({ ...p, 5: true }));
     try {
-      const res = await fetch('http://localhost:8000/api/v1/marketing/step5-video', {
+      const res = await fetch(`${API_BASE}/api/v1/marketing/step5-video`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
