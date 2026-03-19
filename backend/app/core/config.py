@@ -1,5 +1,6 @@
 import os
-from pydantic_settings import BaseSettings
+from pydantic import AliasChoices, Field
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 # backend 폴더 기준 .env 로드 (로컬: backend/.env, 배포: Render Environment Variables)
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -7,9 +8,20 @@ ENV_PATH = os.path.join(ROOT_DIR, ".env")
 
 
 class Settings(BaseSettings):
-    # Supabase
-    supabase_url: str = ""
-    supabase_service_role_key: str = ""
+    model_config = SettingsConfigDict(env_file=ENV_PATH, extra="ignore")
+
+    # Supabase — Render 등에서 SUPABASE_URL / SUPABASE_KEY 로 설정 가능
+    supabase_url: str = Field(
+        default="",
+        validation_alias=AliasChoices("SUPABASE_URL", "NEXT_PUBLIC_SUPABASE_URL"),
+    )
+    supabase_service_role_key: str = Field(
+        default="",
+        validation_alias=AliasChoices(
+            "SUPABASE_SERVICE_ROLE_KEY",
+            "SUPABASE_KEY",
+        ),
+    )
     # AI / API
     gemini_api_key: str = ""
     OPENAI_API_KEY: str = ""
@@ -26,10 +38,6 @@ class Settings(BaseSettings):
     PORTER_API_URL: str = ""
     TEXT_MODEL: str = "gpt-4o"
     IMAGE_MODEL: str = "gpt-image-1"
-
-    class Config:
-        env_file = ENV_PATH
-        extra = "ignore"
 
 
 settings = Settings()

@@ -5,7 +5,7 @@ import jsPDF from 'jspdf';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import ChatbotButton from '@/components/chatbot/ChatbotButton';
-import { apiClient } from '@/lib/api/client';
+import { apiClient, ApiError } from '@/lib/api/client';
 import Link from 'next/dist/client/link';
 
 export default function AnalysisPage() {
@@ -31,9 +31,9 @@ export default function AnalysisPage() {
     } catch (error) {
       console.error('Analysis error:', error);
       const msg =
-        error && typeof (error as Error).message === 'string' && (error as Error).message.includes('fetch')
-          ? '백엔드에 연결할 수 없습니다. Vercel 환경 변수 NEXT_PUBLIC_API_URL 확인 후 재배포해 주세요.'
-          : '서버 통신 중 오류가 발생했습니다.';
+        error instanceof ApiError
+          ? error.message
+          : '서버 통신 중 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.';
       alert(msg);
     } finally {
       setLoading(false);
